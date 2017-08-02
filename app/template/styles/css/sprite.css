@@ -1,0 +1,59 @@
+.icon-arrow-left {
+  background-image: url(../../img/sprite.png);
+  background-position: -106px -30px;
+  width: 13px;
+  height: 21px; }
+
+.icon-arrow-right {
+  background-image: url(../../img/sprite.png);
+  background-position: -79px -57px;
+  width: 13px;
+  height: 21px; }
+
+.icon-car {
+  background-image: url(../../img/sprite.png);
+  background-position: -79px 0px;
+  width: 49px;
+  height: 30px; }
+
+.icon-cart {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 45px;
+  height: 39px; }
+
+.icon-clock {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -39px;
+  width: 40px;
+  height: 41px; }
+
+.icon-guarantee {
+  background-image: url(../../img/sprite.png);
+  background-position: -45px 0px;
+  width: 34px;
+  height: 44px; }
+
+.icon-instagram {
+  background-image: url(../../img/sprite.png);
+  background-position: -45px -44px;
+  width: 24px;
+  height: 24px; }
+
+.icon-marker {
+  background-image: url(../../img/sprite.png);
+  background-position: -79px -30px;
+  width: 27px;
+  height: 27px; }
+
+.icon-search {
+  background-image: url(../../img/sprite.png);
+  background-position: -92px -57px;
+  width: 15px;
+  height: 15px; }
+
+.icon-vk {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -80px;
+  width: 23px;
+  height: 24px; }

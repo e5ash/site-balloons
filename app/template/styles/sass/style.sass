@@ -1,19 +1,15 @@
 /* Including styles files */
-
-
-
-/* Including fonts */
-@font-face
-	src: url('../../fonts/')
-	font-family: 
-	font-weight: 
+@import sprite
+@import url('../../libs/slick-carousel/slick/slick.css')
+@import url('../../libs/slick-carousel/slick/slick-theme.css')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
 
 
 
 /* Global settings */
-$font-size: 16px
-$font-family-1: 'Tahoma', sans-serif
-$color-1: #000
+$font-size: 14px
+$font-family-1: 'Calibri', sans-serif
+$color-1: #4d4d4d
 
 
 
@@ -48,6 +44,7 @@ h1, h2, h3, h4, h5, h6
 ul
 	font-size: 0
 	li
+		display: inline-block
 		font-size: $font-size
 		list-style-type: none
 
@@ -67,9 +64,15 @@ a
 .input, .button, .slick-slide
 	outline: none
 
+input, button, .slick-slide
+	outline: none
+
+button
+	cursor: pointer
+
 /* Grid */
 .container
-	width: (1200px + 30px)
+	width: (1000px + 30px)
 	padding-left: 15px
 	padding-right: 15px
 
@@ -128,7 +131,19 @@ a
 	font-family: $font-family-1
 	transition: .3s
 	cursor: pointer
-
+	width: 135px
+	height: 35px
+	line-height: 33px
+	border: 1px solid #6aa5da
+	color: #6aa5da
+	font-size: 18px
+	border-radius: 4px
+	margin-left: auto
+	margin-right: auto
+	&:hover
+		color: white
+		background: #3383c6
+		box-shadow: 0px 2px 0 rgba(1, 1, 1, 0.69)
 
 .input, .textarea
 	transition: border-color .3s
@@ -138,7 +153,8 @@ a
 ::placeholder
 	color: $color-1
 
-
+.color-gray
+	color: #878787
 
 
 /* Blocks align */ 
@@ -151,3 +167,420 @@ a
 .center, .container
 	margin-left: auto
 	margin-right: auto
+
+
+.panel
+	color: white
+	background: #3383c6
+	a
+		color: white
+		padding-left: 22px
+		padding-right: 22px
+
+	
+
+.search
+	position: relative
+	width: 270px
+	height: 28px
+	line-height: 28px
+	background: white
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.25)
+	padding-left: 10px
+	padding-right: 32px
+	border-radius: 4px
+	margin-top: 7px
+	::placeholder
+		color: #9c9c9c
+	input
+		width: 100%
+		font-family: Calibri
+	button
+		position: absolute
+		right: 9px
+		top: 6px
+		background: none
+
+
+.header
+	padding-top: 20px
+	&__logo
+		margin-right: 58px
+		img
+			display: block
+	&__title
+		line-height: 27px
+		font-size: 26px
+		text-transform: uppercase
+		margin-right: 80px
+		span
+			display: block
+		.color-gray
+			font-size: 21px
+	.phone
+		margin-bottom: 8px
+		&__callback
+			margin-left: 7px
+
+.phone
+	&__number
+		a
+			color: #d53530
+			font-size: 24px
+			cursor: default
+			span
+				font-weight: 700
+	&__callback
+		font-size: 12px
+		a
+			color: #2879c1
+			border-color: #2879c1
+			&:hover
+				border-color: transparent
+
+
+.address
+	font-style: normal
+	font-size: 12px
+	&__icon
+		margin-right: 8px
+	&__content
+		margin-top: -1px
+	a
+		color: #2879c1
+		border-color: #2879c1
+		&:hover
+			border-color: transparent
+
+.cart
+	color: white
+	background: #3383c6
+	width: 200px
+	padding: 15px 5px 18px 12px
+	border-radius: 4px
+	&__counts
+		margin-left: 13px
+		padding-top: 3px
+		span
+			font-weight: 700
+
+.nav
+	padding-top: 20px
+	text-align: center
+	padding-bottom: 13px
+	&-panel
+		text-transform: uppercase
+		a
+			display: block
+			padding: 13px 22px
+			transition: .3s
+			&:hover
+				background: #5195ce
+	&-aside
+		padding: 17px 15px
+		border: 1px solid #e3e3e3
+		box-shadow: 0 5px 10px rgba(1, 1, 1, 0.1)
+		margin-bottom: 17px
+		border-radius: 3px
+		li
+			display: block
+			font-size: 14px
+			margin-bottom: 14px
+			&:last-of-type
+				margin-bottom: 0
+		a
+			&:hover
+				border-color: $color-1
+	li
+		margin-right: 45px
+		text-transform: uppercase
+		&:last-of-type
+			margin-right: 0
+	a
+		border-color: $color-1
+		&:hover
+			color: #3682c5
+			border-color: transparent
+	&-footer
+		padding-bottom: 17px
+		li
+			margin-right: 50px
+			&:last-of-type
+				margin-right: 0
+		a
+			color: #636363
+			&:hover
+				border-color: #636363
+
+.mobile-btn
+	display: none
+	width: 35px
+	height: 22px
+	cursor: pointer
+	span
+		position: relative
+		display: block
+		width: 100%
+		height: 4px
+		background: white
+		margin-bottom: 5px
+		transition: .3s
+	&_toggle
+		span
+			&:nth-of-type(1)
+				top: 9px
+				transform: rotate(45deg)
+			&:nth-of-type(2)
+				opacity: 0
+			&:nth-of-type(3)
+				top: -9px
+				transform: rotate(-45deg)
+
+
+.aside
+	width: 182px
+
+.article
+	width: 800px
+
+
+.slider
+	margin-bottom: 19px
+	&__item
+		position: relative
+
+	&__title
+		top: 40px
+		position: absolute
+		right: 60px
+		line-height: 38px
+		font-size: 37px
+		text-transform: uppercase
+		color: #2f2f2f
+		span
+			display: block
+			font-size: 30px
+			color: #878787
+	.slick-arrow
+		z-index: 1
+		width: 52px
+		height: 52px
+		opacity: 0.8
+		background: white
+		border-radius: 50%
+		text-align: center
+		transition: .3s
+		&:hover
+			opacity: 1
+		&:before
+			display: none
+	.slick-prev
+		left: 12px
+		.icon
+			margin-top: 1px
+	.slick-next
+		right: 12px
+		.icon
+			margin-top: 1px
+			margin-left: 2px
+
+
+.advantages
+	margin-bottom: 35px
+	line-height: 40px
+	&__item
+		&:nth-of-type(2)
+			padding-left: 35px
+		&:nth-of-type(3)
+			text-align: right
+	.icon
+		margin-right: 10px
+	p
+		position: relative
+		top: 3px
+		font-size: 16px
+		font-family: "Open Sans"
+	.icon, p
+		display: inline-block
+
+.section
+	margin-bottom: 35px
+	&__title
+		position: relative
+		margin-bottom: 14px
+		h2, a
+			display: inline-block
+		h2
+			font-size: 30px
+			text-transform: uppercase
+			margin-right: 20px
+		a
+			position: relative
+			top: -3px
+			font-size: 12px
+			color: #2879c1
+			border-color: #2879c1
+			&:hover
+				border-color: transparent
+		&:after
+			content: ''
+			display: block
+			width: 370px
+			height: 2px
+			background: #74acdd
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 16px
+			height: 2px
+			background: #e27e44
+			z-index: 1
+	&__list
+		margin-left: -4px
+		margin-right: -4px 
+	&__item
+		padding-left: 4px
+		padding-right: 4px
+		margin-bottom: 4px 
+
+.product
+	border: 1px solid #e3e3e3
+	text-align: center
+	padding: 17px 10px 14px
+	border-radius: 5px
+	&__img
+		margin-bottom: 15px
+		width: 191px
+		height: 191px
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		img
+			display: inline-block
+			margin-left: auto
+			margin-right: auto
+			max-width: 100%
+			vertical-align: middle
+	&__title
+		font-size: 18px
+		margin-bottom: 14px
+	&__price
+		margin-bottom: 10px
+.price
+	width: 150px
+	margin-left: auto
+	margin-right: auto
+	&__main
+		font-size: 40px
+		line-height: 25px
+		font-weight: 700
+		padding-top: 3px
+		margin-right: 14px
+		span
+			display: block
+			color: #c1c1c1
+			font-size: 14px
+			font-weight: 400
+	&__list
+		font-size: 12px
+		color: #4d4d4d
+		text-align: left
+
+.increment
+	font-size: 0
+	margin-bottom: 8px
+	::placeholder
+		color: #c1c1c1
+	&__plus, &__minus
+		width: 27px
+		height: 28px
+		line-height: 28px
+		background: #ebebeb
+		color: #4d4d4d
+		text-align: center
+		border-radius: 5px
+		cursor: pointer
+		font-size: 24px
+		font-weight: 700
+		transition: .3s
+		line-height: 25px
+		&:hover
+			background: #D7D7D7
+	&__input
+		width: 64px
+		height: 28px
+		border: 1px solid #ebebeb
+		border-radius: 4px
+		font-size: 18px
+		text-align: center
+		margin-left: 6px
+		margin-right: 6px
+		font-family: Calibri
+		color: #c1c1c1
+		padding-left: 10px
+		padding-right: 10px
+	&__plus, &__input, &__minus
+		display: inline-block
+		vertical-align: top
+
+
+.banner
+	margin-bottom: 10px
+	&s
+		margin-top: 30px
+		font-size: 0
+
+
+.footer
+	margin-top: 100px
+	background: #f4f4f4	
+	padding-top: 8px
+	padding-bottom: 6px 
+	&__address
+		margin-right: 200px
+		> p
+			font-size: 18px
+			margin-bottom: 4px
+			font-weight: 400
+	&__about
+		width: 225px
+		position: relative
+		text-align: right
+	&__logo
+		position: absolute
+		top: -4px
+		left: 0
+		img
+			width: 89px
+			height: 45px
+	&__socials
+		margin-bottom: 22px
+
+.socials
+	&__title, &__list
+		display: inline-block
+		vertical-align: middle
+	&__title
+		margin-right: 17px
+		font-size: 16px
+	&__list
+		li
+			margin-right: 6px
+			&:last-of-type
+				margin-right: 0
+	i
+		transition: .3s
+		&:hover
+			transform: scale(1.1)
+
+.dev
+	color: #979797
+	font-size: 10px
+	font-family: "Open Sans"
+	a
+		color: #767676
+		border-color: #767676
+		&:hover
+			border-color: transparent

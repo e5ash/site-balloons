@@ -30,7 +30,12 @@
 <body>
 	<div class="panel">
 		<div class="container row">
-			<div class="panel__nav col">
+			<div class="mobile-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="nav-panel col">
 				<ul>
 					<li><a href="">Как оплатить</a></li>
 					<li><a href="">Доставка</a></li>
@@ -38,19 +43,19 @@
 					<li><a href="">Фотогалерея</a></li>
 					<li><a href="">Акции и скидки</a></li>
 				</ul>
-			</div>
-			<div class="panel__search col">
+			</nav>
+			<div class="panel__search right col">
 				<div class="search"><input type="text" placeholder="Поиск..."><button><i class="icon icon-search"></i></button></div>
 			</div>
 		</div>
 	</div>
 	<header class="header">
 		<div class="container row">
-			<div class="header__logo col"><a href="" class="logo"><img src="" alt=""></a></div>
+			<div class="header__logo col"><a href="" class="logo"><img src="upload/logo.png" alt=""></a></div>
 			<div class="header__title col"><span class="color-gray">Доставка</span><span>ШАРОВ С ГЕЛИЕМ</span><span class="color-gray">в Санкт-Петербурге</span></div>
 			<div class="header__contacts col">
 				<div class="phone">
-					<div class="phone__number"><a href="">8 (812) 903 71 69</a><div>
+					<div class="phone__number"><a href="">8 (812) <span>903 71 69</span></a></div>
 					<div class="phone__callback"><a href="">Заказать обратный звонок</a></div>
 				</div>
 				<address class="address row">
@@ -61,12 +66,12 @@
 					</div>
 				</address>
 			</div>
-			<div class="header__cart col">
+			<div class="header__cart right col">
 				<div class="cart row">
 					<div class="cart__icon col"><i class="icon icon-cart"></i></div>
 					<div class="cart__counts col">
-						<p>Тосваров: 5</p>
-						<p>На сумму: 1650р.</p>
+						<p>Тосваров: <span>5</span></p>
+						<p>На сумму: <span>1650р.</span></p>
 					</div>
 				</div>
 			</div>
@@ -86,7 +91,7 @@
 	</header>
 	<main class="main">
 		<div class="container row">
-			<aside class="aside">
+			<aside class="aside col">
 				<nav class="nav-aside">
 					<ul>
 						<li><a href="">Шарики с гелием</a></li>
@@ -120,22 +125,26 @@
 					<div class="banner"><a href=""><img src="upload/banner/1.png" alt=""></a></div>
 				</div>
 			</aside>
-			<article class="article">
+			<article class="article right col">
 				<div class="slider">
 					<div class="slider__item">
 						<div class="slider__title"><span class="color-gray">Доставка</span>воздушных шаров</div>
 						<div class="slider__img"><img src="upload/slider/1.png" alt=""></div>
 					</div>
+					<div class="slider__item">
+						<div class="slider__title"><span class="color-gray">Доставка</span>воздушных шаров</div>
+						<div class="slider__img"><img src="upload/slider/1.png" alt=""></div>
+					</div>
 				</div>
-				<div class="advantages row row_3">
-					<div class="advantages__item col"><i class="icon icon-car"></i><p>Бесплатная доставка</p></div>
-					<div class="advantages__item col"><i class="icon icon-clock"></i><p>Привезем вовремя!</p></div>
-					<div class="advantages__item col"><i class="icon icon-guarantee"></i><p>Гарантия полета шара</p></div>
+				<div class="advantages row">
+					<div class="advantages__item col col-3"><i class="icon icon-car"></i><p>Бесплатная доставка</p></div>
+					<div class="advantages__item col col-3"><i class="icon icon-clock"></i><p>Привезем вовремя!</p></div>
+					<div class="advantages__item col col-3"><i class="icon icon-guarantee"></i><p>Гарантия полета шара</p></div>
 				</div>
 				<section class="section">
 					<div class="section__title"><h2>Самые популярные шары</h2><a href="">Показать все</a></div>
-					<div class="section__list">
-						<div class="section__item">
+					<div class="section__list row">
+						<div class="section__item col col-3">
 							<div class="product">
 								<div class="product__img"><img src="upload/catalog/1.png" alt=""></div>
 								<div class="product__title"><a href="">Наименование позиции</a></div>
@@ -149,13 +158,13 @@
 								</div>
 								<div class="product__increment increment">
 									<div class="increment__plus">+</div>
-									<input type="text" class="increment__input" value="1">
+									<input type="text" class="increment__input" value="1" maxlength="4">
 									<div class="increment__minus">-</div>
 								</div>
 								<div class="product__button button">КУПИТЬ</div>
 							</div>
 						</div>
-						<div class="section__item">
+						<div class="section__item col col-3">
 							<div class="product">
 								<div class="product__img"><img src="upload/catalog/1.png" alt=""></div>
 								<div class="product__title"><a href="">Наименование позиции</a></div>
@@ -169,13 +178,13 @@
 								</div>
 								<div class="product__increment increment">
 									<div class="increment__plus">+</div>
-									<input type="text" class="increment__input" value="1">
+									<input type="text" class="increment__input" value="1" maxlength="4">
 									<div class="increment__minus">-</div>
 								</div>
 								<div class="product__button button">КУПИТЬ</div>
 							</div>
 						</div>
-						<div class="section__item">
+						<div class="section__item col col-3">
 							<div class="product">
 								<div class="product__img"><img src="upload/catalog/1.png" alt=""></div>
 								<div class="product__title"><a href="">Наименование позиции</a></div>
@@ -189,7 +198,7 @@
 								</div>
 								<div class="product__increment increment">
 									<div class="increment__plus">+</div>
-									<input type="text" class="increment__input" value="1">
+									<input type="text" class="increment__input" value="1" maxlength="4">
 									<div class="increment__minus">-</div>
 								</div>
 								<div class="product__button button">КУПИТЬ</div>
@@ -199,8 +208,8 @@
 				</section>
 				<section class="section">
 					<div class="section__title"><h2>Шары по акции</h2><a href="">Показать все</a></div>
-					<div class="section__list">
-						<div class="section__item">
+					<div class="section__list row">
+						<div class="section__item col col-3">
 							<div class="product">
 								<div class="product__img"><img src="upload/catalog/1.png" alt=""></div>
 								<div class="product__title"><a href="">Наименование позиции</a></div>
@@ -214,13 +223,13 @@
 								</div>
 								<div class="product__increment increment">
 									<div class="increment__plus">+</div>
-									<input type="text" class="increment__input" value="1">
+									<input type="text" class="increment__input" value="1" maxlength="4">
 									<div class="increment__minus">-</div>
 								</div>
 								<div class="product__button button">КУПИТЬ</div>
 							</div>
 						</div>
-						<div class="section__item">
+						<div class="section__item col col-3">
 							<div class="product">
 								<div class="product__img"><img src="upload/catalog/1.png" alt=""></div>
 								<div class="product__title"><a href="">Наименование позиции</a></div>
@@ -234,13 +243,13 @@
 								</div>
 								<div class="product__increment increment">
 									<div class="increment__plus">+</div>
-									<input type="text" class="increment__input" value="1">
+									<input type="text" class="increment__input" value="1" maxlength="4">
 									<div class="increment__minus">-</div>
 								</div>
 								<div class="product__button button">КУПИТЬ</div>
 							</div>
 						</div>
-						<div class="section__item">
+						<div class="section__item col col-3">
 							<div class="product">
 								<div class="product__img"><img src="upload/catalog/1.png" alt=""></div>
 								<div class="product__title"><a href="">Наименование позиции</a></div>
@@ -254,7 +263,7 @@
 								</div>
 								<div class="product__increment increment">
 									<div class="increment__plus">+</div>
-									<input type="text" class="increment__input" value="1">
+									<input type="text" class="increment__input" value="1" maxlength="4">
 									<div class="increment__minus">-</div>
 								</div>
 								<div class="product__button button">КУПИТЬ</div>
@@ -291,11 +300,11 @@
 			</div>
 			<div class="footer__phone col">
 				<div class="phone">
-					<div class="phone__number"><a href="">8 (812) 903 71 69</a><div>
+					<div class="phone__number"><a href="">8 (812) 903 71 69</a></div>
 					<div class="phone__callback"><a href="">Заказать обратный звонок</a></div>
 				</div>
 			</div>
-			<div class="footer__about">
+			<div class="footer__about right col">
 				<div class="footer__logo"><img src="upload/logo.png" alt=""></div>
 				<div class="footer__socials socials">
 					<div class="socials__title">Мы в соцсетях</div>

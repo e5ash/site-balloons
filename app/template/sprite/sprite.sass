@@ -1,0 +1,176 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$arrow-left-name: 'arrow-left'
+$arrow-left-x: 106px
+$arrow-left-y: 30px
+$arrow-left-offset-x: -106px
+$arrow-left-offset-y: -30px
+$arrow-left-width: 13px
+$arrow-left-height: 21px
+$arrow-left-total-width: 128px
+$arrow-left-total-height: 104px
+$arrow-left-image: 'sprite.png'
+$arrow-left: (106px, 30px, -106px, -30px, 13px, 21px, 128px, 104px, 'sprite.png', 'arrow-left', )
+$arrow-right-name: 'arrow-right'
+$arrow-right-x: 79px
+$arrow-right-y: 57px
+$arrow-right-offset-x: -79px
+$arrow-right-offset-y: -57px
+$arrow-right-width: 13px
+$arrow-right-height: 21px
+$arrow-right-total-width: 128px
+$arrow-right-total-height: 104px
+$arrow-right-image: 'sprite.png'
+$arrow-right: (79px, 57px, -79px, -57px, 13px, 21px, 128px, 104px, 'sprite.png', 'arrow-right', )
+$car-name: 'car'
+$car-x: 79px
+$car-y: 0px
+$car-offset-x: -79px
+$car-offset-y: 0px
+$car-width: 49px
+$car-height: 30px
+$car-total-width: 128px
+$car-total-height: 104px
+$car-image: 'sprite.png'
+$car: (79px, 0px, -79px, 0px, 49px, 30px, 128px, 104px, 'sprite.png', 'car', )
+$cart-name: 'cart'
+$cart-x: 0px
+$cart-y: 0px
+$cart-offset-x: 0px
+$cart-offset-y: 0px
+$cart-width: 45px
+$cart-height: 39px
+$cart-total-width: 128px
+$cart-total-height: 104px
+$cart-image: 'sprite.png'
+$cart: (0px, 0px, 0px, 0px, 45px, 39px, 128px, 104px, 'sprite.png', 'cart', )
+$clock-name: 'clock'
+$clock-x: 0px
+$clock-y: 39px
+$clock-offset-x: 0px
+$clock-offset-y: -39px
+$clock-width: 40px
+$clock-height: 41px
+$clock-total-width: 128px
+$clock-total-height: 104px
+$clock-image: 'sprite.png'
+$clock: (0px, 39px, 0px, -39px, 40px, 41px, 128px, 104px, 'sprite.png', 'clock', )
+$guarantee-name: 'guarantee'
+$guarantee-x: 45px
+$guarantee-y: 0px
+$guarantee-offset-x: -45px
+$guarantee-offset-y: 0px
+$guarantee-width: 34px
+$guarantee-height: 44px
+$guarantee-total-width: 128px
+$guarantee-total-height: 104px
+$guarantee-image: 'sprite.png'
+$guarantee: (45px, 0px, -45px, 0px, 34px, 44px, 128px, 104px, 'sprite.png', 'guarantee', )
+$instagram-name: 'instagram'
+$instagram-x: 45px
+$instagram-y: 44px
+$instagram-offset-x: -45px
+$instagram-offset-y: -44px
+$instagram-width: 24px
+$instagram-height: 24px
+$instagram-total-width: 128px
+$instagram-total-height: 104px
+$instagram-image: 'sprite.png'
+$instagram: (45px, 44px, -45px, -44px, 24px, 24px, 128px, 104px, 'sprite.png', 'instagram', )
+$marker-name: 'marker'
+$marker-x: 79px
+$marker-y: 30px
+$marker-offset-x: -79px
+$marker-offset-y: -30px
+$marker-width: 27px
+$marker-height: 27px
+$marker-total-width: 128px
+$marker-total-height: 104px
+$marker-image: 'sprite.png'
+$marker: (79px, 30px, -79px, -30px, 27px, 27px, 128px, 104px, 'sprite.png', 'marker', )
+$search-name: 'search'
+$search-x: 92px
+$search-y: 57px
+$search-offset-x: -92px
+$search-offset-y: -57px
+$search-width: 15px
+$search-height: 15px
+$search-total-width: 128px
+$search-total-height: 104px
+$search-image: 'sprite.png'
+$search: (92px, 57px, -92px, -57px, 15px, 15px, 128px, 104px, 'sprite.png', 'search', )
+$vk-name: 'vk'
+$vk-x: 0px
+$vk-y: 80px
+$vk-offset-x: 0px
+$vk-offset-y: -80px
+$vk-width: 23px
+$vk-height: 24px
+$vk-total-width: 128px
+$vk-total-height: 104px
+$vk-image: 'sprite.png'
+$vk: (0px, 80px, 0px, -80px, 23px, 24px, 128px, 104px, 'sprite.png', 'vk', )
+$spritesheet-width: 128px
+$spritesheet-height: 104px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: ($arrow-left, $arrow-right, $car, $cart, $clock, $guarantee, $instagram, $marker, $search, $vk, )
+$spritesheet: (128px, 104px, 'sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
