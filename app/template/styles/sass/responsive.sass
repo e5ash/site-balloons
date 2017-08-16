@@ -1,3 +1,9 @@
+@media screen and (max-width: 1150px)
+	.callback
+		&__wrap
+			right: 50%
+			margin-right: -257px
+
 @media screen and (max-width: 1050px)
 	.container
 		width: 800px
@@ -34,7 +40,7 @@
 		padding-left: 28px
 
 	.footer
-		margin-top: 0
+		margin-top: 20px
 		&__address
 			margin-right: 85px
 			> p
@@ -45,6 +51,33 @@
 	.nav-footer
 		li
 			margin-right: 23px
+	
+	.cart-page
+		.section
+			&__title
+				&:after
+					width: 100%
+		&__left, &__right
+			float: none
+			width: 100%
+		&__left
+			margin-bottom: 25px
+		&__title
+			margin-right: 0
+		&__increment
+			margin-left: 8%
+			margin-right: 8%
+	.order
+		margin-top: 0
+
+	.product-page
+		&__images
+			width: 413px
+		&__images, &__content
+			float: none
+			margin-left: auto
+			margin-right: auto
+			
 
 @media screen and (max-width: 820px)
 	.mobile-btn
@@ -53,6 +86,7 @@
 		width: 100%
 
 	.nav-panel
+		z-index: 2
 		position: absolute
 		top: 40px
 		left: 0
@@ -135,6 +169,8 @@
 		margin-bottom: 5px
 		&:before, &:after
 			display: none
+		h2
+			margin-right: 0
 
 	.section__list
 		text-align: center
@@ -167,9 +203,120 @@
 				margin-left: 0
 		.address
 			&__content
+	.text-page
+		&__text
+			li
+				text-align: left
+		&__text
+			text-align: left
+@media screen and (max-width: 720px)
+	.cart-page
+		&__item
+			margin-bottom: 5px
+			padding-top: 10px
+			padding-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
+		&__img
+			// display: none
+			width: 130px
+			height: 130px
+			margin-bottom: 10px
+		&__title
+			margin-left: 0
+			margin-bottom: 15px
+		&__increment
+			margin-left: 0
+			margin-right: 0
+			.increment
+				top: 0
+		&__img, &__title, &__increment, &__item-price, &__clear
+			float: none
+			display: block
+			margin-left: auto
+			margin-right: auto
+			line-height: normal
+@media screen and (max-width: 650px)
+	.cart-page
+		&__table
+			margin-bottom: 25px
+		&__buttons
+			.cart-page__button, .right
+				float: none
+				display: block
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 10px
+				width: 273px
+		.policy
+			margin-left: 0
+		.button_gray
+			display: none
+
+@media screen and (max-width: 560px)
+	.callback
+		&__wrap
+			right: 0
+			width: 95%
+			top: 100%
+			margin-right: 2.5%
+		&__input
+			width: 100%
+			margin-right: 0 !important
+		&__button
+			display: block
+			margin-bottom: 10px
+			width: 100%
+	.policy
+		margin-left: 0
+		display: block
+		a
+			display: inline-block
+		br
+			display: none
 @media screen and (max-width: 520px)
 	.section__title
 		h2
 			display: block
 			margin-right: 0
-		
+
+@media screen and (max-width: 460px)	
+	.product-page
+		margin-bottom: 30px
+		&__images, &__content
+			width: 100%
+		&__text
+			margin-bottom: 15px
+		&__icons
+			margin-bottom: 15px
+		&__icon
+			width: 100%
+			margin-right: 0
+			margin-bottom: 5px
+			&:last-of-type
+				margin-bottom: 0
+			.icon-pay
+				// margin-right: 12px
+
+		&__price
+			margin-bottom: 15px
+			&-item
+				display: block
+				margin-right: 0
+				margin-bottom: 5px
+			&-list
+				display: block
+				text-align: center
+				span
+					display: block
+					margin-right: 0
+		&__increment, &__increment .increment, &__button, &__fast
+			display: block
+			margin-left: auto
+			margin-right: auto
+		&__increment
+			.increment
+				width: 132px
+		&__button
+			margin-top: 14px
+			margin-bottom: 10px

@@ -50,13 +50,13 @@
 		</div>
 	</div>
 	<header class="header">
-		<div class="container row">
+		<div class="header__content container row">
 			<div class="header__logo col"><a href="" class="logo"><img src="upload/logo.png" alt=""></a></div>
 			<div class="header__title col"><span class="color-gray">Доставка</span><span>ШАРОВ С ГЕЛИЕМ</span><span class="color-gray">в Санкт-Петербурге</span></div>
 			<div class="header__contacts col">
 				<div class="phone">
 					<div class="phone__number"><a href="">8 (812) <span>903 71 69</span></a></div>
-					<div class="phone__callback"><a href="">Заказать обратный звонок</a></div>
+					<div class="phone__callback"><a href="#callback" data-callback-open>Заказать обратный звонок</a></div>
 				</div>
 				<address class="address row">
 					<div class="address__icon col"><i class="icon icon-marker"></i></div>
@@ -74,6 +74,21 @@
 						<p>На сумму: <span>1650р.</span></p>
 					</div>
 				</div>
+			</div>
+			<div class="callback" id="callback">
+				<div class="callback__wrap">
+					<div class="callback__title">Заказать обратный звонок</div>
+					<div class="callback__close" data-callback-close><i class="icon icon-close"></i></div>
+					<div class="callback__body">
+						<div class="callback__inputs">
+							<input type="text" class="callback__input input" placeholder="Введите имя">
+							<input type="text" class="callback__input input" placeholder="Ваш телефон *">
+						</div>
+						<button class="callback__button button">Отправить заявку</button>
+						<div class="policy">Нажимая на кнопку "Отправить заявку" <br />вы соглашаетесь с <a href="">Политикой конфиденциальности</a></div>
+					</div>
+				</div>
+				<div class="callback__bg" data-callback-close></div>
 			</div>
 		</div>
 		<nav class="nav container">
